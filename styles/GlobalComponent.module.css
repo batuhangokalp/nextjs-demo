@@ -1,0 +1,354 @@
+.header {
+    display: flex;
+    background-color: var(--header-bg-color);
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navLogo {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.logoImage {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+.logoImageResponsive {
+    width: 60%;
+    height: auto;
+    max-width: 100px;
+}
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.navLinks ul li {
+    margin: 0;
+}
+
+.navLinks ul li a {
+    color: var(--header-color);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.navLinks ul li a:hover {
+    color: var(--header-hover-color);
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+}
+
+.allFooter {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.copyRight {
+    background-color: var(--copyright-bg-color);
+    padding: 2rem 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyRight span {
+    color: var(--footer-color);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.dev:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.footerPart {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem
+}
+
+.footer span {
+    color: var(--footer-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.footer h2 {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.seperator {
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--seperator-color);
+}
+
+.workTimes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pointSeperator {
+    width: 100%;
+    height: 1px;
+    background-color: #b1b1b1;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.footer ul a {
+    color: var(--footer-color);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.footer ul a:hover {
+    color: var(--header-hover-color);
+}
+
+.socialBar {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    width: 60%;
+    background-color: var(--modal-bg-color);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    overflow-y: auto; 
+    position: relative;
+    padding: 4rem 0.5rem;
+}
+.modalContent ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.modalContent li {
+    margin: 5px 0; 
+}
+
+.modalContent a {
+    display: block; 
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--modal-link-span-color);
+    background-color: var(--modal-link-bg-color);
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+}
+
+.modalContent a:hover {
+    background-color: var(--modal-link-bg-hover-color);
+    color: var(--modal-link-span-hover-color);
+}
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hoverModal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000; 
+}
+
+.navLinks li {
+    position: relative;
+}
+
+.navLinks li:hover .hoverModal {
+    display: block; 
+}
+
+.hoverModal ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    flex-direction: column;
+    width: 200px;
+}
+
+.hoverModal li {
+    margin: 0;
+}
+
+.hoverModal a {
+    display: block;
+    padding: 10px; 
+    text-decoration: none; 
+    color: #333; 
+    transition: background-color 0.3s; 
+}
+
+.hoverModal a:hover {
+    background-color: #f0f0f0; 
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footerPart {
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1268px) {
+    .header {
+        justify-content: space-between;
+        padding: 0 1rem;
+        position: fixed;
+        z-index: 100;
+    }
+    .navLinks {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .showModal {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+.fb {
+    color: #fff;
+}
+
+.tw {
+    color: #fff;
+}
+
+.ig {
+    color: #fff;
+}
+
+.in {
+    color: #fff;
+}
+
+.tw:hover {
+    color: #1da1f2;
+}
+
+.ig:hover {
+    color: #e4405f;
+}
+
+.in:hover {
+    color: #0a66c2;
+}
+
+.fb:hover {
+    color: #4267b2;
+}
+
+.tw:hover {
+    color: #000;
+}
+
+.ig:hover {
+    color: #e4405f;
+}
+
+.in:hover {
+    color: #0a66c2;
+}
