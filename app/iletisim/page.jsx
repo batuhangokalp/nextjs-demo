@@ -1,8 +1,12 @@
-import React from 'react'
+import ContactContent from "@/components/Contact/ContactContent"
+import Banner from "@/components/GlobalComponents/Banner"
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <Banner src="/pictures/contact2.jpg" heading="İLETİŞİM BİLGİLERİ" />
+      <ContactContent />
+    </>
   )
 }
 

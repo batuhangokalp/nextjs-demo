@@ -32,11 +32,11 @@ const Footer = () => {
           <h2>HİZMETLERİMİZ</h2>
           <div className={styles.seperator}></div>
           <ul>
-            <Link href='/hizmetlerimiz'>Akıl Ve Zeka Oyunları Atölyesi</Link>
-            <Link href='/hizmetlerimiz'>Yabancı Dil</Link>
-            <Link href='/hizmetlerimiz'>Yaz Okulu</Link>
-            <Link href='/hizmetlerimiz'>Robotik Atölyesi</Link>
-            <Link href='/hizmetlerimiz'>Kodlama Atölyesi</Link>
+            <Link href='/hizmetlerimiz'>Hizmet 1</Link>
+            <Link href='/hizmetlerimiz'>Hizmet 2</Link>
+            <Link href='/hizmetlerimiz'>Hizmet 3</Link>
+            <Link href='/hizmetlerimiz'>Hizmet 4</Link>
+            <Link href='/hizmetlerimiz'>Hizmet 5</Link>
           </ul>
         </nav>
         <nav className={styles.footerPart}>

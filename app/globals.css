@@ -16,41 +16,77 @@ a {
 }
 
 :root {
-  --header-bg-color: #fff;
   --header-color: #1E1B39;
   --header-hover-color: #008ad2;
-  --footer-bg-color: #1E1B39;
   --footer-color: #DDDDDD;
-  --copyright-bg-color: #092635;
   --secondary-color: #1a1a1a;
-  --background-color: #f5f5f5;
   --text-color: #333333;
   --seperator-color: #008ad2;
-  --usInNumbers-bg-color: #008ad2;
+
+
+  /* HOME COLOR */
+  --home-h4-color: #008ad2;
+  --home-h2-color: #0A0A0A;
   --usInNumbers-color: #fff;
+  /* HOME COLOR */
+
+
+  /* BE HELPER */
   --beHelperFirstBox-bg-color: #008ad2;
   --beHelperSecondBox-bg-color: #0A0A0A;
   --beHelperSecondBox-color: #fff;
+
   --button-bg-color: #ED2C41;
   --button-text-color: #fff;
   --button-bg-hover-color: #0A0A0A;
-  --educationPrograms-bg-color: #fff;
-  --educationPrograms-h4-color: #008ad2;
-  --educationPrograms-h2-color: #0A0A0A;
-  --aboutUs-bg-color: #F8F8F9;
-  --aboutUs-h4-color: #008ad2;
-  --aboutUs-h2-color: #0A0A0A;
-  --aboutUs-text-color: #454545;
-  --aboutUs-button-bg-color: #008ad2;
-  --aboutUs-button-text-color: #fff;
-  --aboutUs-button-bg-hover-color: #F8F8F9;
-  --aboutUs-button-hover-text-color: #454545;
-  --support-h4-color: #454545;
-  --support-span-color: #008ad2;
+  /* BE HELPER */
+
+
+  /* DROPDOWN */
   --modal-bg-color: #F8F8F9;
   --modal-link-bg-color: #F8F8F9;
   --modal-link-span-color: #0056b3;
   --modal-link-bg-hover-color: #0056b3;
   --modal-link-span-hover-color: #F8F8F9;
+  /* DROPDOWN */
+
+
+  /* HOME ABOUT */
+  --aboutUs-text-color: #454545;
+  --aboutUs-button-bg-color: #008ad2;
+  --aboutUs-button-text-color: #fff;
+  --aboutUs-button-bg-hover-color: #F8F8F9;
+  --aboutUs-button-hover-text-color: #454545;
+  /* HOME ABOUT */
+
+
+  /* BACKGROUND */
+  --header-bg-color: #fff;
+  --footer-bg-color: #1E1B39;
+  --copyright-bg-color: #092635;
+  --background-color: #f5f5f5;
+  --professionalCrew-bg-color: #F8F8F9;
+  --educationPrograms-bg-color: #fff;
+  --aboutUs-bg-color: #F8F8F9;
+  --usInNumbers-bg-color: #008ad2;
+  /* BACKGROUND */
+
+
+  /* CONTACT DIV */
+  --contactInfoBox-bg-color: #f8f8f8;
+  --cornerBox-bg-color: #008ad2;
+  --contact-seperator-bg-color: #E7E7E7;
+  --contact-h1-color: #454545;
+  --contact-btn-hover-color: #08405e;
+
+  /* CONTACT DIV */
+
+
+  /* ABOUT DIV */
+  --about-seperator-bg-color: #E7E7E7;
+  --about-h3-color: #008ad2;
+  --about-span-color: #454545;
+
+  /* ABOUT DIV */
 
 }

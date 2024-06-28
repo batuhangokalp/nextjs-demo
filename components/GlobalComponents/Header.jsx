@@ -40,13 +40,13 @@ const Header = () => {
                         onMouseEnter={() => handleMouseEnter('hakkimizda')}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Link href="/hakkimizda">Hakkımızda +</Link>
+                        <span>Hakkımızda +</span>
                         {hoveredLink === 'hakkimizda' && (
                             <div className={styles.hoverModal}>
                                 <ul>
-                                    <li><Link href="/biz-kimiz">Biz Kimiz</Link></li>
-                                    <li><Link href="/misyon-vizyon">Misyon ve Vizyon</Link></li>
-                                    <li><Link href="/ekibimiz">Ekibimiz</Link></li>
+                                    <li><Link href="/hakkimizda/biz-kimiz">Biz Kimiz</Link></li>
+                                    <li><Link href="/hakkimizda/vizyon-misyon">Misyon ve Vizyon</Link></li>
+                                    <li><Link href="/hakkimizda/ekibimiz">Ekibimiz</Link></li>
                                 </ul>
                             </div>
                         )}
@@ -55,13 +55,13 @@ const Header = () => {
                         onMouseEnter={() => handleMouseEnter('hizmetlerimiz')}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Link href="/hizmetlerimiz">Hizmetlerimiz +</Link>
+                        <span>Hizmetlerimiz +</span>
                         {hoveredLink === 'hizmetlerimiz' && (
                             <div className={styles.hoverModal}>
                                 <ul>
-                                    <li><Link href="/hizmet1">Hizmet 1</Link></li>
-                                    <li><Link href="/hizmet2">Hizmet 2</Link></li>
-                                    <li><Link href="/hizmet3">Hizmet 3</Link></li>
+                                    <li><Link href="/hizmetlerimiz/hizmet1">Hizmet 1</Link></li>
+                                    <li><Link href="/hizmetlerimiz/hizmet2">Hizmet 2</Link></li>
+                                    <li><Link href="/hizmetlerimiz/hizmet3">Hizmet 3</Link></li>
                                 </ul>
                             </div>
                         )}
@@ -70,23 +70,22 @@ const Header = () => {
                         onMouseEnter={() => handleMouseEnter('programlarimiz')}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Link href="/programlarimiz">Programlarımız +</Link>
+                        <span>Programlarımız +</span>
                         {hoveredLink === 'programlarimiz' && (
                             <div className={styles.hoverModal}>
                                 <ul>
-                                    <li><Link href="/program1">İlkokul</Link></li>
-                                    <li><Link href="/program2">Ortaokul</Link></li>
-                                    <li><Link href="/program3">Lise</Link></li>
+                                    <li><Link href="/programlarimiz/ilkokul">İlkokul</Link></li>
+                                    <li><Link href="/programlarimiz/ortaokul">Ortaokul</Link></li>
+                                    <li><Link href="/programlarimiz/lise">Lise</Link></li>
                                 </ul>
                             </div>
                         )}
                     </li>
-                    <li><Link href="/etkinlikler">Etkinlikler</Link></li>
                     <li
                         onMouseEnter={() => handleMouseEnter('multimedya')}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Link href="/multimedya">Multimedya +</Link>
+                        <span>Multimedya +</span>
                         {hoveredLink === 'multimedya' && (
                             <div className={styles.hoverModal}>
                                 <ul>
@@ -114,7 +113,6 @@ const Header = () => {
                             <li><Link href="/hakkimizda">Hakkımızda +</Link></li>
                             <li><Link href="/hizmetlerimiz">Hizmetlerimiz +</Link></li>
                             <li><Link href="/programlarimiz">Programlarımız +</Link></li>
-                            <li><Link href="/etkinlikler">Etkinlikler</Link></li>
                             <li><Link href="/multimedya">MultiMedya +</Link></li>
                             <li><Link href="/iletisim">İletişim</Link></li>
                         </ul>

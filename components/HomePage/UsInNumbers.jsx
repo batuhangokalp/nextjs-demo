@@ -16,7 +16,7 @@ const UsInNumbers = () => {
                 <div className={styles.usInNumbersBox}>
                     <FaHeart color='#fff' size={25}/>
                     <h2>2500</h2>
-                    <span>Mutlu Müşterilerimiz</span>
+                    <span>Mutlu Öğrencilerimiz</span>
                 </div>
                 <div className={styles.usInNumbersBox}>
                     <FaLeaf color='#fff' size={25}/>

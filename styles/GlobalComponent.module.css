@@ -31,11 +31,13 @@
     height: auto;
     max-width: 200px;
 }
+
 .logoImageResponsive {
     width: 60%;
     height: auto;
     max-width: 100px;
 }
+
 .navLinks ul {
     list-style: none;
     display: flex;
@@ -53,9 +55,23 @@
     font-weight: 500;
 }
 
+.navLinks ul li span {
+    color: var(--header-color);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
 .navLinks ul li a:hover {
     color: var(--header-hover-color);
 }
+
+.navLinks ul li span:hover {
+    color: var(--header-hover-color);
+    cursor: pointer;
+    user-select: none;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -75,15 +91,16 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
 
 .footer {
     background-color: var(--footer-bg-color);
-    padding: 1rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    padding: 3rem;
 }
 
 .copyRight {
@@ -122,7 +139,7 @@
     color: var(--footer-color);
     text-decoration: none;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 25px;
 }
 
@@ -197,10 +214,11 @@
     background-color: var(--modal-bg-color);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     height: 100%;
-    overflow-y: auto; 
+    overflow-y: auto;
     position: relative;
     padding: 4rem 0.5rem;
 }
+
 .modalContent ul {
     list-style-type: none;
     padding: 0;
@@ -208,23 +226,24 @@
 }
 
 .modalContent li {
-    margin: 5px 0; 
+    margin: 5px 0;
 }
 
 .modalContent a {
-    display: block; 
+    display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: var(--modal-link-span-color);
     background-color: var(--modal-link-bg-color);
     border-radius: 5px;
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s;
 }
 
 .modalContent a:hover {
     background-color: var(--modal-link-bg-hover-color);
     color: var(--modal-link-span-hover-color);
 }
+
 .closeButton {
     position: absolute;
     top: 10px;
@@ -241,7 +260,8 @@
     background-color: #fff;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    z-index: 1000; 
+    z-index: 1000;
+    border-top: 6px solid var(--modal-link-bg-hover-color);
 }
 
 .navLinks li {
@@ -249,7 +269,7 @@
 }
 
 .navLinks li:hover .hoverModal {
-    display: block; 
+    display: block;
 }
 
 .hoverModal ul {
@@ -267,19 +287,23 @@
 
 .hoverModal a {
     display: block;
-    padding: 10px; 
-    text-decoration: none; 
-    color: #333; 
-    transition: background-color 0.3s; 
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
 }
 
 .hoverModal a:hover {
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
+    padding-left: 1.5rem;
+    transition: padding-left 0.6s;
 }
+
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
     }
+
     .footerPart {
         width: 90%;
         margin-bottom: 3rem;
@@ -290,15 +314,18 @@
     .header {
         justify-content: space-between;
         padding: 0 1rem;
-        position: fixed;
         z-index: 100;
+        height: 75px;
     }
+
     .navLinks {
         display: none;
     }
+
     .hamburger {
         display: flex;
     }
+
     .showModal {
         display: flex;
     }
@@ -352,3 +379,320 @@
 .in:hover {
     color: #0a66c2;
 }
+
+
+
+/* EDUCATION PROGRAM BOX*/
+.educationProgramsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.educationProgramsBox:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.educationProgramsBox:hover .educationProgramsBoxText h3 {
+    color: var(--educationPrograms-h4-color);
+}
+
+.educationProgramsBoxImg {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.educationProgramsBoxText {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.educationProgramsBoxText h3 {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.educationProgramsImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .educationProgramsBox {
+        width: 80%;
+    }
+
+    .educationPrograms h4 {
+        font-size: 13px;
+    }
+
+    .educationPrograms h2 {
+        font-size: 24px;
+    }
+}
+
+/* EDUCATION PROGRAM BOX*/
+
+/* PROFILE CARD*/
+
+.profileCard {
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    flex: 0 0 100%;
+}
+
+.profileCardAbout {
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    flex: 0 0 20%;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profileCard:hover .profileImage {
+    transform: scale(1.1);
+}
+
+.profileCardAbout:hover .profileImage {
+    transform: scale(1.1);
+}
+
+.profileCard:hover .detailsContainer {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.profileCardAbout:hover .detailsContainer {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.profileCard:hover .name {
+    color: var(--home-h4-color);
+}
+
+.profileCardAbout:hover .name {
+    color: var(--home-h4-color);
+}
+
+.detailsContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* PROFILE CARD*/
+
+
+
+/* SLIDER */
+
+
+.slider {
+    position: relative;
+    width: 85%;
+    overflow: hidden;
+}
+
+.slideWrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    display: flex;
+    flex: 0 0 25%;
+    padding: 10px;
+    height: 30rem;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 767px) {
+    .slide {
+        flex: 0 0 100%;
+    }
+    .profileCardAbout {
+        flex: 0 0 100%;
+    }
+}
+
+
+/* SLIDER */
+
+
+/* PHOTO BOX */
+.photoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 13rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-top: 2rem;
+}
+
+.photoBoxImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.photoImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .photoBox {
+        width: 90%;
+        height: 20rem;
+    }
+}
+
+/* PHOTO BOX */
+
+/* BANNER DIV */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 3rem;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+}
+
+.overlayContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.description {
+    width: 100%;
+    font-size: 30px;
+    opacity: 0;
+    animation: slideIn 1s forwards 1s;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-start;
+    font-weight: 700;
+}
+
+.banner:hover .imageContainer {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlayContent {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlay {
+        left: 10%;
+    }
+
+    .description {
+        font-size: 22px;
+    }
+
+    .banner {
+        height: 35vh;
+    }
+}
+
+/* BANNER DIV */
