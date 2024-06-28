@@ -2,7 +2,6 @@ import Image from 'next/image';
 import styles from '../../styles/GlobalComponent.module.css';
 
 const ProfileCard = ({ src, name, title, slug }) => {
-    console.log(slug)
     return (
         <div className={slug !== "ekibimiz" ?  styles.profileCard : styles.profileCardAbout}>
             <div className={styles.imageContainer}>

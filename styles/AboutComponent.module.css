@@ -44,7 +44,7 @@
     width: 65%;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 768px) {
     .visionAndMission {
         padding: 2rem 3rem;
     }
@@ -74,10 +74,12 @@
     gap: 5rem;
     margin-top: 1.5rem;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 768px) {
     .professionalCrew {
-        height: 300vh;
+        height: 400vh;
         padding: 1rem 3rem;
+        gap: 0rem;
+
     }
 }
 /* CREW DIV */

@@ -8,6 +8,7 @@ import Image from 'next/image';
 const Header = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [hoveredLink, setHoveredLink] = useState(null);
+    const [openSubmenu, setOpenSubmenu] = useState(null);
 
     const handleMouseEnter = (link) => {
         setHoveredLink(link);
@@ -20,9 +21,18 @@ const Header = () => {
     const toggleModal = () => {
         setModalOpen(!modalOpen);
     }
+
     const closeModal = (e) => {
         if (e.target.classList.contains(styles.modal)) {
             setModalOpen(false);
+        }
+    }
+
+    const toggleSubmenu = (menu) => {
+        if (openSubmenu === menu) {
+            setOpenSubmenu(null);
+        } else {
+            setOpenSubmenu(menu);
         }
     }
 
@@ -45,7 +55,7 @@ const Header = () => {
                             <div className={styles.hoverModal}>
                                 <ul>
                                     <li><Link href="/hakkimizda/biz-kimiz">Biz Kimiz</Link></li>
-                                    <li><Link href="/hakkimizda/vizyon-misyon">Misyon ve Vizyon</Link></li>
+                                    <li><Link href="/hakkimizda/vizyon-misyon">Vizyon ve Misyonumuz</Link></li>
                                     <li><Link href="/hakkimizda/ekibimiz">Ekibimiz</Link></li>
                                 </ul>
                             </div>
@@ -59,9 +69,9 @@ const Header = () => {
                         {hoveredLink === 'hizmetlerimiz' && (
                             <div className={styles.hoverModal}>
                                 <ul>
-                                    <li><Link href="/hizmetlerimiz/hizmet1">Hizmet 1</Link></li>
-                                    <li><Link href="/hizmetlerimiz/hizmet2">Hizmet 2</Link></li>
-                                    <li><Link href="/hizmetlerimiz/hizmet3">Hizmet 3</Link></li>
+                                    <li><Link href="/hizmetlerimiz/yabanci-dil">Yabancı Dil</Link></li>
+                                    <li><Link href="/hizmetlerimiz/yaz-okulu">Yaz Okulu</Link></li>
+                                    <li><Link href="/hizmetlerimiz/kodlama-atolyesi">Kodlama Atolyesi</Link></li>
                                 </ul>
                             </div>
                         )}
@@ -89,8 +99,8 @@ const Header = () => {
                         {hoveredLink === 'multimedya' && (
                             <div className={styles.hoverModal}>
                                 <ul>
-                                    <li><Link href="/video">Video</Link></li>
-                                    <li><Link href="/foto">Fotoğraf</Link></li>
+                                    <li><Link href="/multimedya/video">Video</Link></li>
+                                    <li><Link href="/multimedya/fotograf">Fotoğraf</Link></li>
                                 </ul>
                             </div>
                         )}
@@ -110,10 +120,37 @@ const Header = () => {
                         <Image src="/pictures/etut-logo.png" alt="Logo" layout="intrinsic" width={100} height={20} className={styles.logoImageResponsive} />
                         <ul>
                             <li><Link href="/">Ana Sayfa</Link></li>
-                            <li><Link href="/hakkimizda">Hakkımızda +</Link></li>
-                            <li><Link href="/hizmetlerimiz">Hizmetlerimiz +</Link></li>
-                            <li><Link href="/programlarimiz">Programlarımız +</Link></li>
-                            <li><Link href="/multimedya">MultiMedya +</Link></li>
+                            <li><span onClick={() => toggleSubmenu('hakkimizda')}>Hakkımızda +</span></li>
+                            {openSubmenu === 'hakkimizda' && (
+                                <ul className={styles.subMenu}>
+                                    <li><Link href="/hakkimizda/biz-kimiz">Biz Kimiz</Link></li>
+                                    <li><Link href="/hakkimizda/vizyon-misyon">Vizyon ve Misyonumuz</Link></li>
+                                    <li><Link href="/hakkimizda/ekibimiz">Ekibimiz</Link></li>
+                                </ul>
+                            )}
+                            <li><span onClick={() => toggleSubmenu('hizmetlerimiz')}>Hizmetlerimiz +</span></li>
+                            {openSubmenu === 'hizmetlerimiz' && (
+                                <ul className={styles.subMenu}>
+                                    <li><Link href="/hizmetlerimiz/yabanci-dil">Yabancı Dil</Link></li>
+                                    <li><Link href="/hizmetlerimiz/yaz-okulu">Yaz Okulu</Link></li>
+                                    <li><Link href="/hizmetlerimiz/kodlama-atolyesi">Kodlama Atolyesi</Link></li>
+                                </ul>
+                            )}
+                            <li><span onClick={() => toggleSubmenu('programlarimiz')}>Programlarımız +</span></li>
+                            {openSubmenu === 'programlarimiz' && (
+                                <ul className={styles.subMenu}>
+                                    <li><Link href="/programlarimiz/ilkokul">İlkokul</Link></li>
+                                    <li><Link href="/programlarimiz/ortaokul">Ortaokul</Link></li>
+                                    <li><Link href="/programlarimiz/lise">Lise</Link></li>
+                                </ul>
+                            )}
+                            <li><span onClick={() => toggleSubmenu('multimedya')}>Multimedya +</span></li>
+                            {openSubmenu === 'multimedya' && (
+                                <ul className={styles.subMenu}>
+                                    <li><Link href="/multimedya/video">Video</Link></li>
+                                    <li><Link href="/multimedya/fotograf">Fotoğraf</Link></li>
+                                </ul>
+                            )}
                             <li><Link href="/iletisim">İletişim</Link></li>
                         </ul>
                     </div>

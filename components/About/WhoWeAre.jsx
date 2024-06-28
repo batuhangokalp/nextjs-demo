@@ -9,7 +9,7 @@ const WhoWeAre = () => {
             <div className={styles.imageWrapper}>
                 <div className={styles.logoContainer}>
                     <Image
-                        src="/pictures/homework.jpg"
+                        src="/pictures/hakkimizda.jpg"
                         alt="Logo"
                         layout="fill"
                         className={styles.logoImage}

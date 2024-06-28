@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../styles/GlobalComponent.module.css';
 
-const EducationProgramBox = ({ text, src }) => {
+const EducationProgramBox = ({ text, src, link }) => {
     return (
         <div className={styles.educationProgramsBox}>
             <div className={styles.educationProgramsBoxImg}>
-                <Link href="#">
+                <Link href={link}>
                     <Image
                         src={src}
                         alt="Logo"

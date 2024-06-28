@@ -1,0 +1,33 @@
+import Image from 'next/image';
+import styles from '../../styles/ServicesComponent.module.css';
+
+const ServicesContent = ({ heading, src, span1, span2, span3, span4 }) => {
+    return (
+        <div className={styles.servicesContent}>
+            <h3>{heading}</h3>
+            <div className={styles.seperator} />
+            <div className={styles.imageWrapper}>
+                <div className={styles.logoContainer}>
+                    <Image
+                        src={src}
+                        alt="Logo"
+                        layout="fill"
+                        className={styles.logoImage}
+                    />
+                </div>
+                <div className={styles.textContent}>
+                    <span>
+                        {span1}
+                        {span2}
+                    </span>
+                </div>
+            </div>
+            <span>
+                {span3}
+                {span4}
+            </span>
+        </div>
+    );
+};
+
+export default ServicesContent;
