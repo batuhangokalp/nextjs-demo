@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from '../../styles/HomeComponent.module.css';
 import Image from 'next/image';
+import homeData from '../datas/Home.json'; 
 
 const MainTop = () => {
+    const { mainTop } = homeData; 
     return (
         <div className={styles.mainTop}>
             <div className={styles.imageContainer}>
                 <Image
-                    src="/pictures/mainImg.jpg"
+                    src={mainTop.image}
                     alt="Ana Sayfa Görseli"
                     layout="fill" // Resmin nasıl yerleştirileceği (fill: container boyutunu dolduracak şekilde)
                     objectFit="cover" // Resmin nasıl uyum sağlayacağı (cover: tamamen kaplayacak şekilde)
@@ -17,8 +19,8 @@ const MainTop = () => {
             </div>
             <div className={styles.overlay}>
                 <div className={styles.overlayContent}>
-                    <h4 className={styles.title}>ÖDEV-OKUL DESTEĞİ ÇALIŞMASI</h4>
-                    <h2 className={styles.description}>Öğrenciler ödevlerini, sınıf ve branş öğretmenleri gözetiminde yapmaktadırlar.</h2>
+                    <h4 className={styles.title}>{mainTop.title}</h4>
+                    <h2 className={styles.description}>{mainTop.description}</h2>
                 </div>
             </div>
         </div>

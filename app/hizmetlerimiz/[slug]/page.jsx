@@ -2,6 +2,7 @@
 import Banner from '@/components/GlobalComponents/Banner';
 import ServicesContent from '@/components/ServicesComponent/ServicesContent';
 import { useParams } from 'next/navigation';
+import servicesData from '../../../components/datas/Services.json';
 
 export default function ProgramPage() {
   const params = useParams();
@@ -10,47 +11,47 @@ export default function ProgramPage() {
   let content;
 
   switch (slug) {
-    case 'yabanci-dil':
+    case servicesData.hizmet1.case:
       content = (
         <>
-          <Banner src="/pictures/class.jpg" heading="HİZMETLERİMİZ" />
+          <Banner src={servicesData.hizmet1.image} heading={servicesData.hizmet1.title} />
           <ServicesContent
-            heading="Yabancı Dil"
-            src="/pictures/language.png"
-            span1="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span2="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span3="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span4="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
+            heading={servicesData.hizmet1.heading}
+            src={servicesData.hizmet1.contentImg}
+            span1={servicesData.hizmet1.span1}
+            span2={servicesData.hizmet1.span2}
+            span3={servicesData.hizmet1.span3}
+            span4={servicesData.hizmet1.span4}
           />
         </>
       );
       break;
-    case 'yaz-okulu':
-      content = (
+      case servicesData.hizmet2.case:
+        content = (
         <>
-          <Banner src="/pictures/class.jpg" heading="HİZMETLERİMİZ" />
+          <Banner src={servicesData.hizmet2.image} heading={servicesData.hizmet2.title} />
           <ServicesContent
-            heading="Yaz Okulu"
-            src="/pictures/summerSchool.jpg"
-            span1="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span2="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span3="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span4="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
+            heading={servicesData.hizmet2.heading}
+            src={servicesData.hizmet2.contentImg}
+            span1={servicesData.hizmet2.span1}
+            span2={servicesData.hizmet2.span2}
+            span3={servicesData.hizmet2.span3}
+            span4={servicesData.hizmet2.span4}
           />
         </>
       );
       break;
-    case 'kodlama-atolyesi':
-      content = (
+      case servicesData.hizmet3.case:
+        content = (
         <>
-          <Banner src="/pictures/class.jpg" heading="HİZMETLERİMİZ" />
+          <Banner src={servicesData.hizmet3.image} heading={servicesData.hizmet3.title} />
           <ServicesContent
-            heading="Kodlama Atolyesi"
-            src="/pictures/coding.jpg"
-            span1="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span2="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span3="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
-            span4="Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu"
+            heading={servicesData.hizmet3.heading}
+            src={servicesData.hizmet3.contentImg}
+            span1={servicesData.hizmet3.span1}
+            span2={servicesData.hizmet3.span2}
+            span3={servicesData.hizmet3.span3}
+            span4={servicesData.hizmet3.span4}
           />
         </>
       );

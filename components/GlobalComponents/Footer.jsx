@@ -3,6 +3,14 @@ import styles from '../../styles/GlobalComponent.module.css';
 import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
+import footerData from '../datas/Footer.json';
+
+const iconComponents = {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaXTwitter
+};
 
 const Footer = () => {
   return (
@@ -10,69 +18,65 @@ const Footer = () => {
       <footer className={styles.footer}>
         <nav className={styles.footerPart}>
           <Link href="/">
-            <Image src="/pictures/footer_logo.png" alt="Logo" layout="intrinsic" width={200} height={50} className={styles.logoImage} />
+            <Image src={footerData.logo} alt="Logo" layout="intrinsic" width={200} height={50} className={styles.logoImage} />
           </Link>
-          <span>Uzman, tecrübeli, hizmette sınır tanımayan kadromuzla bünyemizdeki her öğrenciyi özgüveni yüksek, araştıran, problem çözebilen, sevmeyi ve sevilmeyi bilen, empati kurabilen, düşünen ve üreten bir birey olarak yetiştirmek kurumumuzun amaçları arasında yer almaktadır.</span>
+          <span>{footerData.description}</span>
           <div className={styles.socialBar}>
-            <Link href="https://facebook.com" target='_blank' className={styles.fb}>
-              <FaFacebook size={25} />
-            </Link>
-            <Link href="https://x.com" target='_blank' className={styles.tw}>
-              <FaXTwitter size={25} />
-            </Link>
-            <Link href="https://instagram.com" target='_blank' className={styles.ig}>
-              <FaInstagram size={25} />
-            </Link>
-            <Link href="https://linkedin.com" target='_blank' className={styles.in}>
-              <FaLinkedin size={25} />
-            </Link>
+            {footerData.socialLinks.map((link, index) => {
+              const Icon = iconComponents[link.icon];
+              return (
+                <Link key={index} href={link.href} target='_blank' className={styles[link.className]}>
+                  <Icon size={25} />
+                </Link>
+              );
+            })}
           </div>
         </nav>
         <nav className={styles.footerPart}>
           <h2>HİZMETLERİMİZ</h2>
           <div className={styles.seperator}></div>
           <ul>
-            <Link href='/hizmetlerimiz/yabanci-dil'>Yabancı Dil</Link>
-            <Link href='/hizmetlerimiz/yaz-okulu'>Yaz Okulu</Link>
-            <Link href='/hizmetlerimiz/kodlama-atolyesi'>Kodlama Atolyesi</Link>
+            {footerData.services.map((service, index) => (
+              <li key={index}>
+                <Link href={service.href}>{service.label}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <nav className={styles.footerPart}>
           <h2>İLETİŞİM BİLGİLERİ</h2>
           <div className={styles.seperator}></div>
-          <span>Telefon: 0212 111 22 33</span>
-          <span>E-Mail: egitim@gmail.com</span>
-
-          <span>Adres:<br /> Vatan Mahallesi, Vatan Sokak No: 11 / 22 <br /> Uzunköprü / Edirne</span>
-
+          <span>Telefon: {footerData.contact.phone}</span>
+          <span>E-Mail: {footerData.contact.email}</span>
+          <span>Adres:<br /> {footerData.contact.address}</span>
         </nav>
         <nav className={styles.footerPart}>
           <h2>ÇALIŞMA SAATLERİ</h2>
           <div className={styles.seperator}></div>
           <div className={styles.workTimes}>
             <span>Hafta İçi:</span>
-            <span>08.30-18.30</span>
+            <span>{footerData.workHours.weekdays}</span>
           </div>
           <div className={styles.pointSeperator}></div>
           <div className={styles.workTimes}>
             <span>Cumartesi:</span>
-            <span>09.30-18.00</span>
+            <span>{footerData.workHours.saturday}</span>
           </div>
           <div className={styles.pointSeperator}></div>
-
           <div className={styles.workTimes}>
             <span>Pazar:</span>
-            <span>Kapalı</span>
+            <span>{footerData.workHours.sunday}</span>
           </div>
         </nav>
       </footer>
       <div className={styles.copyRight}>
-        <span>Copyright © 2024  |  Tüm Hakları Saklıdır</span>
-        <Link href='https://gokalp.netlify.app' target='_blank'><span className={styles.dev}>Batuhan Gökalp</span></Link>
+        <span>{footerData.copyright}</span>
+        <Link href={footerData.developerLink} target='_blank'>
+          <span className={styles.dev}>{footerData.developerName}</span>
+        </Link>
       </div>
     </div>
-
   );
 }
 
-export default Footer
+export default Footer;

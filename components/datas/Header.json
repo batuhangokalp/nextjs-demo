@@ -1,0 +1,38 @@
+{
+    "logo": "/pictures/etut-logo.png",
+    "links": [
+        { "href": "/", "label": "Ana Sayfa" },
+        {
+            "label": "Hakkımızda",
+            "submenu": [
+                { "href": "/hakkimizda/biz-kimiz", "label": "Biz Kimiz" },
+                { "href": "/hakkimizda/vizyon-misyon", "label": "Vizyon ve Misyonumuz" },
+                { "href": "/hakkimizda/ekibimiz", "label": "Ekibimiz" }
+            ]
+        },
+        {
+            "label": "Hizmetlerimiz",
+            "submenu": [
+                { "href": "/hizmetlerimiz/yabanci-dil", "label": "Yabancı Dil" },
+                { "href": "/hizmetlerimiz/yaz-okulu", "label": "Yaz Okulu" },
+                { "href": "/hizmetlerimiz/kodlama-atolyesi", "label": "Kodlama Atolyesi" }
+            ]
+        },
+        {
+            "label": "Programlarımız",
+            "submenu": [
+                { "href": "/programlarimiz/ilkokul", "label": "İlkokul" },
+                { "href": "/programlarimiz/ortaokul", "label": "Ortaokul" },
+                { "href": "/programlarimiz/lise", "label": "Lise" }
+            ]
+        },
+        {
+            "label": "Multimedya",
+            "submenu": [
+                { "href": "/multimedya/video", "label": "Video" },
+                { "href": "/multimedya/fotograf", "label": "Fotoğraf" }
+            ]
+        },
+        { "href": "/iletisim", "label": "İletişim" }
+    ]
+}

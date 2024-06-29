@@ -1,0 +1,91 @@
+{
+    "mainTop": {
+        "image": "/pictures/mainImg.jpg",
+        "title": "ÖDEV-OKUL DESTEĞİ ÇALIŞMASI",
+        "description": "Öğrenciler ödevlerini, sınıf ve branş öğretmenleri gözetiminde yapmaktadırlar."
+    },
+    "aboutUs": {
+        "image": "/pictures/ilkokul.png",
+        "title": "HAKKIMIZDA",
+        "subtitle": "Eğitim Anlayışımız",
+        "description": "Kurumumuzda ilkokul ve ortaokul öğrencilerine yönelik okul derslerine yardımcı çalışmalar yapılmaktadır. Aynı zamanda kurumumuzda ortaokul öğrencilerimiz için LGS hazırlık kursları düzenlenmektedir. Bunun yanında sosyal-sportif faaliyetler, hızlı ve anlayarak okuma çalışmaları, manevi eğitim, akıl ve zekâ oyunları gibi faaliyetler de kurumumuzun hizmetleri içerisinde bulunmaktadır.",
+        "supportButtonText": "Nasıl Yardımcı Olabiliriz?",
+        "supportTitle": "Destek Hattı",
+        "supportNumber": "0212 000 00 00"
+    },
+    "beHelper": {
+        "mainTitle": "NASIL YARDIMCI OLABİLİRİZ?",
+        "mainDescription": "Uzman, tecrübeli, hizmette sınır tanımayan kadromuzla bünyemizdeki her öğrenciyi özgüveni yüksek, araştıran, problem çözebilen, sevmeyi ve sevilmeyi bilen, empati kurabilen, düşünen ve üreten bir birey olarak yetiştirmek kurumumuzun amaçları arasında yer almaktadır.",
+        "buttonText": "İLETİŞİM BİLGİLERİ",
+        "sections": [
+            {
+                "icon": "FaClover",
+                "title": "SEVGİYLE EĞİTİM",
+                "description": "Günlük hayatta kullanmış olduğumuz somut ve soyut birçok kavramı farkederek öğreniyorlar."
+            },
+            {
+                "icon": "FaThumbsUp",
+                "title": "BAŞARILI EĞİTİM",
+                "description": "Çocukta zeka gelişiminin %70 lik kısmı 7 yaşına kadar tamamlanır ve öğrenme becerisi bu yaşta gelişir."
+            },
+            {
+                "icon": "FaPeopleGroup",
+                "title": "TECRÜBELİ KADRO",
+                "description": "Personelin tecrübe, güler yüz ve yüksek motivasyonunun getirdiği olumlu özellikleri çocuklara yansıttığı bir ortam."
+            }
+        ],
+        "videoLink": "/multimedya/video",
+        "videoImage": "/pictures/homework.jpg"
+    },
+    "educationPrograms": {
+        "mainTitle": "EĞİTİM ALANLARIMIZ VE ÇALIŞMALARIMIZ",
+        "subTitle": "EĞİTİM PROGRAMLARIMIZ",
+        "programs": [
+            {
+                "text": "İlkokul",
+                "src": "/pictures/ilkokul.png",
+                "link": "/programlarimiz/ilkokul"
+            },
+            {
+                "text": "Ortaokul",
+                "src": "/pictures/ortaokul.jpg",
+                "link": "/programlarimiz/ortaokul"
+            },
+            {
+                "text": "Lise",
+                "src": "/pictures/lise.jpg",
+                "link": "/programlarimiz/lise"
+            }
+        ]
+    },
+    "professionalCrew": {
+        "mainTitle": "PROFESYONEL",
+        "subTitle": "KADROMUZ"
+    },
+    "usInNumbers": {
+        "mainTitle": "NEDEN BİZİ TERCİH ETMELİSİNİZ?",
+        "subTitle": "Rakamlarla Biz",
+        "boxes": [
+            {
+                "icon": "FaHome",
+                "number": "10",
+                "title": "Yıllık Tecrübe"
+            },
+            {
+                "icon": "FaHeart",
+                "number": "2500",
+                "title": "Mutlu Öğrencilerimiz"
+            },
+            {
+                "icon": "FaLeaf",
+                "number": "20",
+                "title": "Uzman Personel"
+            },
+            {
+                "icon": "FaAward",
+                "number": "10",
+                "title": "Başarı Ödülü"
+            }
+        ]
+    }
+}

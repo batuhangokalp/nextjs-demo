@@ -1,0 +1,29 @@
+{
+    "logo": "/pictures/footer_logo.png",
+    "description": "Uzman, tecrübeli, hizmette sınır tanımayan kadromuzla bünyemizdeki her öğrenciyi özgüveni yüksek, araştıran, problem çözebilen, sevmeyi ve sevilmeyi bilen, empati kurabilen, düşünen ve üreten bir birey olarak yetiştirmek kurumumuzun amaçları arasında yer almaktadır.",
+    "socialLinks": [
+      { "href": "https://facebook.com", "icon": "FaFacebook", "className": "fb" },
+      { "href": "https://x.com", "icon": "FaXTwitter", "className": "tw" },
+      { "href": "https://instagram.com", "icon": "FaInstagram", "className": "ig" },
+      { "href": "https://linkedin.com", "icon": "FaLinkedin", "className": "in" }
+    ],
+    "services": [
+      { "href": "/hizmetlerimiz/yabanci-dil", "label": "Yabancı Dil" },
+      { "href": "/hizmetlerimiz/yaz-okulu", "label": "Yaz Okulu" },
+      { "href": "/hizmetlerimiz/kodlama-atolyesi", "label": "Kodlama Atolyesi" }
+    ],
+    "contact": {
+      "phone": "0212 111 22 33",
+      "email": "egitim@gmail.com",
+      "address": "Vatan Mahallesi, Vatan Sokak No: 11 / 22 Uzunköprü / Edirne"
+    },
+    "workHours": {
+      "weekdays": "08.30-18.30",
+      "saturday": "09.30-18.00",
+      "sunday": "Kapalı"
+    },
+    "copyright": "Copyright © 2024  |  Tüm Hakları Saklıdır",
+    "developerLink": "https://gokalp.netlify.app",
+    "developerName": "Gökalp Web Tasarım"
+  }
+  

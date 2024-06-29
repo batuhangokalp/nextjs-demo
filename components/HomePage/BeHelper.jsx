@@ -6,64 +6,62 @@ import { FaClover, FaPeopleGroup, FaThumbsUp } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation'; // Importing from next/navigation
+import { useRouter } from 'next/navigation';
+import homeData from '../datas/Home.json'; 
 
 const BeHelper = () => {
     const router = useRouter();
-
+    const { beHelper } = homeData; 
     const handleRedirectToContact = () => {
         router.push('/iletisim');
     };
+
+    // Dynamic icon rendering function
+    const renderIcon = (icon) => {
+        switch(icon) {
+            case 'FaClover':
+                return <FaClover color='#008ad2' size={25} />;
+            case 'FaThumbsUp':
+                return <FaThumbsUp color='#008ad2' size={25} />;
+            case 'FaPeopleGroup':
+                return <FaPeopleGroup color='#008ad2' size={25} />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <div className={styles.beHelper}>
             <div className={styles.beHelperFirstBox}>
-                <h4>NASIL YARDIMCI OLABİLİRİZ?</h4>
-                <span>Uzman, tecrübeli, hizmette sınır tanımayan kadromuzla bünyemizdeki her öğrenciyi özgüveni yüksek, araştıran, problem çözebilen, sevmeyi ve sevilmeyi bilen, empati kurabilen, düşünen ve üreten bir birey olarak yetiştirmek kurumumuzun amaçları arasında yer almaktadır.</span>
-                <button className={styles.beHelperButton} onClick={handleRedirectToContact}><span>İLETİŞİM BİLGİLERİ</span></button>
+                <h4>{beHelper.mainTitle}</h4>
+                <span>{beHelper.mainDescription}</span>
+                <button className={styles.beHelperButton} onClick={handleRedirectToContact}>
+                    <span>{beHelper.buttonText}</span>
+                </button>
             </div>
             <div className={styles.beHelperSecondBox}>
-                <div className={styles.beHelperSecondBoxLine}>
-                    <div className={styles.beHelperSecondBoxLineIcon}>
-                        <div className={styles.iconDiv}>
-                            <FaClover color='#008ad2' size={25} />
+                {beHelper.sections.map((section, index) => (
+                    <div key={index} className={styles.beHelperSecondBoxLine}>
+                        <div className={styles.beHelperSecondBoxLineIcon}>
+                            <div className={styles.iconDiv}>
+                                {renderIcon(section.icon)}
+                            </div>
+                        </div>
+                        <div className={styles.beHelperSecondBoxLineInfo}>
+                            <h4>{section.title}</h4>
+                            <span>{section.description}</span>
                         </div>
                     </div>
-                    <div className={styles.beHelperSecondBoxLineInfo}>
-                        <h4>SEVGİYLE EĞİTİM</h4>
-                        <span>Günlük hayatta kullanmış olduğumuz somut ve soyut birçok kavramı farkederek öğreniyorlar.</span>
-                    </div>
-                </div>
-                <div className={styles.beHelperSecondBoxLine}>
-                    <div className={styles.beHelperSecondBoxLineIcon}>
-                        <div className={styles.iconDiv}>
-                            <FaThumbsUp color='#008ad2' size={25} />
-                        </div>
-                    </div>
-                    <div className={styles.beHelperSecondBoxLineInfo}>
-                        <h4>BAŞARILI EĞİTİM</h4>
-                        <span>Çocukta zeka gelişiminin %70 lik kısmı 7 yaşına kadar tamamlanır ve öğrenme becerisi bu yaşta gelişir.</span>
-                    </div>
-                </div>
-                <div className={styles.beHelperSecondBoxLine}>
-                    <div className={styles.beHelperSecondBoxLineIcon}>
-                        <div className={styles.iconDiv}>
-                            <FaPeopleGroup color='#008ad2' size={25} />
-                        </div>
-                    </div>
-                    <div className={styles.beHelperSecondBoxLineInfo}>
-                        <h4>TECRÜBELİ KADRO</h4>
-                        <span>Personelin tecrübe, güler yüz ve yüksek motivasyonunun getirdiği olumlu özellikleri çocuklara yansıttığı bir ortam.</span>
-                    </div>
-                </div>
+                ))}
             </div>
             <div className={styles.beHelperThirdBox}>
-                <Link href="/multimedya/video">
+                <Link href={beHelper.videoLink}>
                     <div className={styles.playBtn}>
                         <FaPlay color='#008ad2' size={25} />
                     </div>
                 </Link>
                 <Image
-                    src="/pictures/homework.jpg"
+                    src={beHelper.videoImage}
                     alt="Logo"
                     layout="fill"
                     className={styles.logoImage}
@@ -73,4 +71,4 @@ const BeHelper = () => {
     )
 }
 
-export default BeHelper
+export default BeHelper;
