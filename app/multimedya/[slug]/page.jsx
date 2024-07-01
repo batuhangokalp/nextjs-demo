@@ -5,14 +5,14 @@ import VideoGallery from '@/components/Multimedia/VideoGallery';
 import { useParams } from 'next/navigation';
 
 const photos = [
-  '/pictures/img5.jpg',
-  '/pictures/img6.png',
-  '/pictures/img7.jpg',
-  '/pictures/img8.jpg',
-  '/pictures/img1.jpg',
-  '/pictures/img2.jpg',
-  '/pictures/img3.jpg',
-  '/pictures/img4.jpg',
+  '/pictures/matbaa1.jpg',
+  '/pictures/matbaa2.jpg',
+  '/pictures/matbaa3.jpg',
+  '/pictures/matbaa4.jpg',
+  '/pictures/matbaa5.jpg',
+  '/pictures/matbaa6.jpg',
+  '/pictures/matbaa1.jpg',
+  '/pictures/matbaa2.jpg',
 ];
 const videos = [
   { id: 'lnHtdgvR3pQ' },
@@ -31,7 +31,7 @@ export default function ProgramPage() {
     case 'video':
       content = (
         <>
-          <Banner src="/pictures/gallery4.png" heading="VİDEOLAR" />
+          <Banner src="/pictures/matbaa5.jpg" heading="VİDEOLAR" />
           <VideoGallery videos={videos} />
           </>
       );
@@ -39,7 +39,7 @@ export default function ProgramPage() {
     case 'fotograf':
       content = (
         <>
-          <Banner src="/pictures/gallery4.png" heading="FOTOĞRAFLAR" />
+          <Banner src="/pictures/matbaa5.jpg" heading="FOTOĞRAFLAR" />
           <PhotoGallery photos={photos} />
         </>
       );

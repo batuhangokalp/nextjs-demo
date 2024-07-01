@@ -15,7 +15,7 @@ export default function AboutPage() {
     case 'biz-kimiz':
       content = (
         <>
-          <Banner src="/pictures/hakkimizda.jpg" heading="HAKKIMIZDA" />
+          <Banner src="/pictures/gallery4.png" heading="HAKKIMIZDA" />
           <WhoWeAre />
         </>
       );
@@ -28,10 +28,10 @@ export default function AboutPage() {
         </>
       );
       break;
-    case 'ekibimiz':
+    case 'referanslarimiz':
       content = (
         <>
-          <Banner src="/pictures/crew2.jpg" heading="UZMAN EKİBİMİZ" />
+          <Banner src="/pictures/reference.jpg" heading="REFERANSLARIMIZ" />
           <ProfessionalCrew slug={slug} />
        </>
       );
