@@ -10,21 +10,20 @@ const ServicesContent = ({ heading, src, span1, span2, span3, span4 }) => {
                 <div className={styles.logoContainer}>
                     <Image
                         src={src}
-                        alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                        alt="eğitim, kurs, dershane, etüt, özel ders, öğrenci, öğretmen, lise, ilkokul, ortaokul, sınav"
                         layout="fill"
                         className={styles.logoImage}
-                        priority
                     />
                 </div>
                 <div className={styles.textContent}>
                     <span>
-                        {span1} <br />
+                        {span1}
                         {span2}
                     </span>
                 </div>
             </div>
             <span>
-                {span3} <br />
+                {span3}
                 {span4}
             </span>
         </div>

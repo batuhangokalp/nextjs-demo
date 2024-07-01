@@ -16,7 +16,6 @@ const BeHelper = () => {
         router.push('/iletisim');
     };
 
-    // Dynamic icon rendering function
     const renderIcon = (icon) => {
         switch(icon) {
             case 'FaClover':
@@ -62,7 +61,7 @@ const BeHelper = () => {
                 </Link>
                 <Image
                     src={beHelper.videoImage}
-                    alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                    alt="eğitim, kurs, dershane, etüt, özel ders, öğrenci, öğretmen, lise, ilkokul, ortaokul, sınav"
                     layout="fill"
                     className={styles.logoImage}
                 />

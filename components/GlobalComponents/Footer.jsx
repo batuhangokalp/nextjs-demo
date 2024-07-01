@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import styles from '../../styles/GlobalComponent.module.css';
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaYoutube  } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaXTwitter, FaLinkedin  } from "react-icons/fa6";
 import footerData from '../datas/Footer.json';
 
 const iconComponents = {
   FaFacebook,
   FaInstagram,
   FaYoutube,
+  FaLinkedin,
+  FaXTwitter
 };
 
 const Footer = () => {

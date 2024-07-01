@@ -13,12 +13,13 @@ const AboutUs = () => {
     const handleRedirectToContact = () => {
         router.push('/iletisim');
     };
+
     return (
         <div className={styles.aboutUs}>
             <div className={styles.aboutUsImg}>
                 <Image
                     src={aboutUs.image}
-                    alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                    alt="eğitim, kurs, dershane, etüt, özel ders, öğrenci, öğretmen, lise, ilkokul, ortaokul, sınav"
                     layout="fill"
                     className={styles.logoImage}
                 />

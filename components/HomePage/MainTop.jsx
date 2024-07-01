@@ -10,7 +10,7 @@ const MainTop = () => {
             <div className={styles.imageContainer}>
                 <Image
                     src={mainTop.image}
-                    alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                    alt="eğitim, kurs, dershane, etüt, özel ders, öğrenci, öğretmen, lise, ilkokul, ortaokul, sınav"
                     layout="fill" // Resmin nasıl yerleştirileceği (fill: container boyutunu dolduracak şekilde)
                     objectFit="cover" // Resmin nasıl uyum sağlayacağı (cover: tamamen kaplayacak şekilde)
                     quality={100} 

@@ -1,16 +1,16 @@
 {
     "whoWeAre": {
-        "image": "/pictures/matbaa1.jpg",
+        "image": "/pictures/hakkimizda.jpg",
         "title": "Hakkımızda",
-        "description": "TEMPO MATBAACILIK DÜĞME ETİKET SAN. TİC. LTD. ŞTİ., 1990'lı yılların başında kurulmuş bir matbaa ve etiket üreticisidir. Kuruluşundan itibaren sektördeki köklü geçmişiyle bilinen firma, 2001 yılında yapılan yeniden yapılandırma ile bugünkü adını almıştır. 25 yılı aşkın süredir, müşterilere matbaa ve etiket çözümleri sunan Tempo, İstanbul merkezli olarak Türkiye genelinde geniş bir müşteri portföyüne sahiptir. ",
-        "description2": "Tempo, sektördeki lider konumunu korumak için sürekli olarak teknolojik yeniliklere yatırım yapmaktadır. Modern ofset baskı makineleri ve ileri düzeydeki üretim ekipmanlarıyla, grafik tasarım, baskı ve baskı sonrası işlemleri kapsayan geniş bir üretim yelpazesi sunmaktadır. Müşteri memnuniyetini her şeyin önünde tutan firma, her bir proje için özel çözümler üreterek müşteri beklentilerini en üst seviyede karşılamayı hedeflemektedir.",
-        "description3": "Tempo, iş etiği ve kalite standartlarına olan bağlılığı ile tanınmaktadır. Şeffaf, dürüst ve çevreye duyarlı iş politikalarıyla hareket eden firma, güler yüzlü ve uzman kadrosuyla birlikte, sektördeki saygın konumunu sürdürmektedir. Doğru hizmet anlayışıyla müşterilerinin yanında olan TEMPO, her türlü matbaa ve etiket ihtiyacı için güvenilir bir iş ortağı olarak bilinmektedir."
+        "description": "Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu. ",
+        "description2": "Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu.",
+        "description3": "Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu."
 
     },
     "visionAndMission": {
         "titleVision": "Vizyonumuz",
         "titleMission": "Misyonumuz",
-        "visionDescription": "Tempo Matbaa olarak, matbaa ve yayıncılık sektöründe uluslararası alanda tanınan ve tercih edilen bir marka olmayı vizyon ediniyoruz. Müşteri odaklı yaklaşımımız, yenilikçi teknolojilerle entegre çözümler sunma yeteneğimiz ve sürdürülebilir iş uygulamalarımız ile sektördeki liderliğimizi pekiştirerek, kalite standartlarını sürekli olarak yükseltiyoruz.",
-        "missionDescription": "Misyonumuz, müşterilerimize özel ihtiyaçlarına uygun kaliteli matbaa çözümleri sunarak, onların iş süreçlerini optimize etmelerine ve başarılarını artırmalarına katkıda bulunmaktır. Sektördeki en son teknolojileri kullanarak, çevresel etkileri minimize eden sürdürülebilir üretim yöntemleriyle, topluma ve çevreye karşı sorumluluklarımızı yerine getiriyoruz. Profesyonel ve yetkin ekibimizle birlikte, yenilikçi yaklaşımlarımızla sürekli olarak müşteri memnuniyetini ve iş ortaklarımızın başarılarını artırmayı hedefliyoruz."
+        "visionDescription": "Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu.",
+        "missionDescription": "Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştu."
     }
 }

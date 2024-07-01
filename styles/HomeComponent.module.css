@@ -257,6 +257,7 @@
 @media (max-width: 768px) {
     .beHelper {
         flex-direction: column;
+        margin-bottom: 3rem;
     }
 
     .beHelperFirstBox {
@@ -582,9 +583,10 @@
     width: 100%;
     background-color: var(--professionalCrew-bg-color);
     align-items: center;
-    padding: 6rem 0;
+    padding: 3rem 0;
     gap: 0.5rem;
-    height: 30rem;
+    margin-top: 2rem;
+
 }
 
 .professionalCrew h4 {
@@ -613,7 +615,7 @@
 }
 
 @media (max-width: 768px) {
-    .professionalCrewBoxes {
+    .educationProgramsBoxes {
         flex-direction: column;
         gap: 2rem
     }

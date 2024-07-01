@@ -3,21 +3,20 @@ import styles from '../../styles/GlobalComponent.module.css';
 
 const ProfileCard = ({ src, name, title, slug }) => {
     return (
-        <div className={slug !== "referanslarimiz" ?  styles.profileCard : styles.profileCardAbout}>
+        <div className={slug !== "ekibimiz" ?  styles.profileCard : styles.profileCardAbout}>
             <div className={styles.imageContainer}>
                 <Image
                     src={src}
-                    alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                    alt="eğitim, kurs, dershane, etüt, özel ders, öğrenci, öğretmen, lise, ilkokul, ortaokul, sınav"
                     layout="fill"
-                    objectFit="contain"
-                    quality={100}
+                    objectFit="cover"
                     className={styles.profileImage}
                 />
             </div>
-            {/* <div className={styles.detailsContainer}>
+            <div className={styles.detailsContainer}>
                 <div className={styles.name}>{name}</div>
                 <div className={styles.title}>{title}</div>
-            </div> */}
+            </div>
         </div>
     );
 }

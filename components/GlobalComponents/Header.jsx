@@ -43,7 +43,7 @@ const Header = () => {
                 <Link href="/">
                     <Image
                         src={headerData.logo}
-                        alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                        alt="eğitim, kurs, dershane, etüt, özel ders, öğrenci, öğretmen, lise, ilkokul, ortaokul, sınav"
                         layout="intrinsic"
                         width={200}
                         height={50}
@@ -90,7 +90,7 @@ const Header = () => {
                         <span className={styles.closeButton} onClick={toggleModal}>&times;</span>
                         <Image
                             src={headerData.logo}
-                            alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                            alt="eğitim, kurs, dershane, etüt, özel ders, öğrenci, öğretmen, lise, ilkokul, ortaokul, sınav"
                             layout="intrinsic"
                             width={100}
                             height={20}

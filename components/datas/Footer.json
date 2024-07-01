@@ -1,22 +1,22 @@
 {
-    "logo": "/pictures/tempo-logo.png",
-    "description": "Tempo Matbaa olarak, müşteri odaklı yaklaşımımız ve sektöre olan derin bilgimizle baskı çözümlerinde öncü konumumuzu sağlamlaştırıyoruz. Müşterilerimizin beklentilerini aşmak için sürekli olarak kendimizi yeniliyor ve kalite standartlarımızı yükseltiyoruz.",
+    "logo": "/pictures/footer_logo.png",
+    "description": "Uzman, tecrübeli, hizmette sınır tanımayan kadromuzla bünyemizdeki her öğrenciyi özgüveni yüksek, araştıran, problem çözebilen, sevmeyi ve sevilmeyi bilen, empati kurabilen, düşünen ve üreten bir birey olarak yetiştirmek kurumumuzun amaçları arasında yer almaktadır.",
     "socialLinks": [
-      { "href": "https://facebook.com/tempo_matbaa/", "icon": "FaFacebook", "className": "fb" },
-      { "href": "https://instagram.com/tempo_matbaa/", "icon": "FaInstagram", "className": "ig" },
-      { "href": "https://youtube.com/tempo_matbaa/", "icon": "FaYoutube", "className": "yt" }
+      { "href": "https://facebook.com/", "icon": "FaFacebook", "className": "fb" },
+      { "href": "https://instagram.com/", "icon": "FaInstagram", "className": "ig" },
+      { "href": "https://x.com/", "icon": "FaXTwitter", "className": "tw" },
+      { "href": "https://linkedin.com/", "icon": "FaLinkedin", "className": "in" },
+      { "href": "https://youtube.com/", "icon": "FaYoutube", "className": "yt" }
     ],
     "services": [
-      { "href": "/hizmetlerimiz/ilac-kutulari", "label": "İlaç Kutuları" },
-      { "href": "/hizmetlerimiz/makyaj-malzeme-kutulari", "label": "Makyaj Malzeme Kutuları" },
-      { "href": "/hizmetlerimiz/katalog", "label": "Katalog" },
-      { "href": "/hizmetlerimiz/hediye-paketleri", "label": "Hediye Paketleri" },
-      { "href": "/hizmetlerimiz/ayakkabi-kutulari", "label": "Ayakkabı Kutuları" }
+      { "href": "/hizmetlerimiz/yabanci-dil", "label": "Yabancı Dil" },
+      { "href": "/hizmetlerimiz/yaz-okulu", "label": "Yaz Okulu" },
+      { "href": "/hizmetlerimiz/kodlama-atolyesi", "label": "Kodlama Atolyesi" }
     ],
     "contact": {
-      "phone": "+90 507 819 24 98",
-      "email": "matbaatempo@gmail.com",
-      "address": "Yüzyıl Mahallesi Matbaacılar Sitesi 5. Cad. No: 68 Bağcılar / İstanbul"
+      "phone": "+90 555 555 55 55",
+      "email": "egitim@gmail.com",
+      "address": "Vatan Mahallesi Sever Sokak No: 1 Kadıköy / İstanbul"
     },
     "workHours": {
       "weekdays": "08.30-18.30",

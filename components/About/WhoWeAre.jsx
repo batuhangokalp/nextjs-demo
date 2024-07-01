@@ -13,7 +13,7 @@ const WhoWeAre = () => {
                 <div className={styles.logoContainer}>
                     <Image
                         src={whoWeAre.image}
-                        alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                        alt="eğitim, kurs, dershane, etüt, özel ders, öğrenci, öğretmen, lise, ilkokul, ortaokul, sınav"
                         layout="fill"
                         className={styles.logoImage}
                     />
