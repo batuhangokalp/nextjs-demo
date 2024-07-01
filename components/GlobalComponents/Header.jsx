@@ -41,7 +41,14 @@ const Header = () => {
         <header className={styles.header}>
             <nav className={styles.navLogo}>
                 <Link href="/">
-                    <Image src={headerData.logo} alt="Logo" layout="intrinsic" width={200} height={50} className={styles.logoImage} />
+                    <Image
+                        src={headerData.logo}
+                        alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                        layout="intrinsic"
+                        width={200}
+                        height={50}
+                        className={styles.logoImage}
+                    />
                 </Link>
             </nav>
             <nav className={styles.navLinks}>
@@ -81,7 +88,14 @@ const Header = () => {
                 <div className={`${styles.modal} ${styles.showModal}`} onClick={closeModal}>
                     <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
                         <span className={styles.closeButton} onClick={toggleModal}>&times;</span>
-                        <Image src={headerData.logo} alt="Logo" layout="intrinsic" width={100} height={20} className={styles.logoImageResponsive} />
+                        <Image
+                            src={headerData.logo}
+                            alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
+                            layout="intrinsic"
+                            width={100}
+                            height={20}
+                            className={styles.logoImageResponsive}
+                        />
                         <ul>
                             {headerData.links.map((link, index) => (
                                 <React.Fragment key={index}>

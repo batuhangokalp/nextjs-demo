@@ -5,57 +5,76 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone, FaMobile } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { useState } from 'react';
+import emailjs from "@emailjs/browser";
 
 const ContactContent = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    });
+    const [name, setName] = useState("");
+    const [surname, setSurname] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [message, setMessage] = useState("");
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
-
+    const handleName = (event) => {
+        setName(event.target.value);
+      };
+      const handleSurname = (event) => {
+        setSurname(event.target.value);
+      };
+      const handleEmail = (event) => {
+        setEmail(event.target.value);
+      };
+      const handlePhone = (event) => {
+        setPhone(event.target.value);
+      };
+      const handleMessage = (event) => {
+        setMessage(event.target.value);
+      };
+    
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Form verilerini işleme kodlarını buraya ekleyin
-        console.log('Form submitted:', formData);
-        // Formu gönderip verileri işledikten sonra formu sıfırlayabilirsiniz
-        setFormData({
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
-        });
+        emailjs
+        .sendForm(
+          "service_x8to8r3",
+          "template_h1wphja",
+          form.current,
+          "HIEfNIrIn-f8wU_7t"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setName("");
+            setSurname("");
+            setEmail("");
+            setPhone("");
+            setMessage("");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     };
     return (
         <div className={styles.contactContent}>
             <div className={styles.contactInfo}>
                 <ContactInfoBox
                     heading="Adres"
-                    text="Vatan Mahallesi, Vatan Sokak No: 00 / 00"
+                    text=" Yüzyıl Mahallesi Matbaacılar Sitesi 5. Cad. No: 68"
                     text2="İstanbul / TÜRKİYE"
                     icon={<FaLocationDot size={25} color='#fff' />}
                 />
                 <ContactInfoBox
                     heading="Telefon"
-                    text="0212 000 00 00"
+                    text=" 0212 565 86 87"
                     icon={<FaPhone size={25} color='#fff' />}
                 />
                 <ContactInfoBox
                     heading="Gsm"
-                    text="0500 000 00 00"
+                    text="+90 507 819 24 98"
                     icon={<FaMobile size={25} color='#fff' />}
                 />
                 <ContactInfoBox
                     heading="E-Mail"
-                    text="egitim@gmail.com"
+                    text="matbaatempo@gmail.com"
                     icon={<IoMdMail size={25} color='#fff' />}
                 />
             </div>
@@ -67,22 +86,22 @@ const ContactContent = () => {
                         <div className={styles.formGroup}>
                             <input
                                 type="text"
-                                id="firstName"
-                                name="firstName"
+                                id="name"
+                                name="name"
                                 placeholder="Ad"
-                                value={formData.firstName}
-                                onChange={handleChange}
+                                value={name}
+                                onChange={handleName}
                                 required
                             />
                         </div>
                         <div className={styles.formGroup}>
                             <input
                                 type="text"
-                                id="lastName"
-                                name="lastName"
+                                id="surname"
+                                name="surname"
                                 placeholder="Soyad"
-                                value={formData.lastName}
-                                onChange={handleChange}
+                                value={surname}
+                                onChange={handleSurname}
                                 required
                             />
                         </div>
@@ -94,8 +113,8 @@ const ContactContent = () => {
                                 id="email"
                                 name="email"
                                 placeholder="E-posta"
-                                value={formData.email}
-                                onChange={handleChange}
+                                value={email}
+                                onChange={handleEmail}
                                 required
                             />
                         </div>
@@ -105,8 +124,8 @@ const ContactContent = () => {
                                 id="phone"
                                 name="phone"
                                 placeholder="Telefon"
-                                value={formData.phone}
-                                onChange={handleChange}
+                                value={phone}
+                                onChange={handlePhone}
                                 required
                             />
                         </div>
@@ -116,8 +135,8 @@ const ContactContent = () => {
                             id="message"
                             name="message"
                             placeholder="Mesaj"
-                            value={formData.message}
-                            onChange={handleChange}
+                            value={message}
+                            onChange={handleMessage}
                             required
                         ></textarea>
                     </div>
@@ -128,7 +147,7 @@ const ContactContent = () => {
             <div className={styles.contactMaps}>
                 <h1>Neredeyiz</h1>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.611389226259!2d28.97695951575219!3d41.0296629792995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9c4f7baf49f%3A0x100000000000000!2zS8O8w7zDtnkgSXN0YW5idWw!5e0!3m2!1str!2str!4v1675000000000!5m2!1str!2str"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.3340305117704!2d28.847962474870975!3d41.06169061613614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb6fc1e2d5fb%3A0xfd4cb81bb51a02f!2sTEMPO%20MATBAA!5e0!3m2!1str!2str!4v1717078976637!5m2!1str!2str"
                     width="100%"
                     height="500"
                     style={{ border: 0 }}

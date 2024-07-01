@@ -32,7 +32,7 @@
     width: 35%;
     margin-right: 2rem;
     position: relative;
-    height: 15rem;
+    height: 20rem;
 }
 
 .logoImage {
@@ -69,16 +69,14 @@
     justify-content: center;
     padding: 2rem 6rem;
     flex-wrap: wrap;
-    height: 60vw;
     position: relative;
-    gap: 5rem;
+    gap: 2rem;
     margin-top: 1.5rem;
 }
 @media (max-width: 768px) {
     .professionalCrew {
-        height: 400vh;
         padding: 1rem 3rem;
-        gap: 0rem;
+        gap: 1rem;
 
     }
 }

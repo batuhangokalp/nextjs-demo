@@ -1,66 +1,46 @@
 {
     "mainTop": {
-        "image": "/pictures/mainImg.jpg",
-        "title": "ÖDEV-OKUL DESTEĞİ ÇALIŞMASI",
-        "description": "Öğrenciler ödevlerini, sınıf ve branş öğretmenleri gözetiminde yapmaktadırlar."
+        "image": "/pictures/matbaa2.jpg",
+        "title": "TEMPO MATBAA",
+        "description": "MATBAA SEKTÖRÜNDE KALİTE, GÜVEN VE YENİLİKÇİLİK STANDARTLARINI BELİRLİYORUZ."
     },
     "aboutUs": {
-        "image": "/pictures/ilkokul.png",
+        "image": "/pictures/matbaa3.jpg",
         "title": "HAKKIMIZDA",
-        "subtitle": "Eğitim Anlayışımız",
-        "description": "Kurumumuzda ilkokul ve ortaokul öğrencilerine yönelik okul derslerine yardımcı çalışmalar yapılmaktadır. Aynı zamanda kurumumuzda ortaokul öğrencilerimiz için LGS hazırlık kursları düzenlenmektedir. Bunun yanında sosyal-sportif faaliyetler, hızlı ve anlayarak okuma çalışmaları, manevi eğitim, akıl ve zekâ oyunları gibi faaliyetler de kurumumuzun hizmetleri içerisinde bulunmaktadır.",
+        "subtitle": "İş Anlayışımız",
+        "description": "Tempo Matbaa olarak, müşteri odaklı yaklaşımımız ve sektöre olan derin bilgimizle baskı çözümlerinde öncü konumumuzu sağlamlaştırıyoruz. Yılların getirdiği deneyim ve teknolojiyi bir araya getirerek, her projeye özel çözümler üretiyoruz. Müşterilerimizin beklentilerini aşmak için sürekli olarak kendimizi yeniliyor ve kalite standartlarımızı yükseltiyoruz. Sektördeki liderliğimizi sürdürebilmek için güçlü bir ekip ve müşteri memnuniyetine odaklı bir yaklaşım benimsiyoruz.",
         "supportButtonText": "Nasıl Yardımcı Olabiliriz?",
         "supportTitle": "Destek Hattı",
-        "supportNumber": "0212 000 00 00"
+        "supportNumber": "0 212 565 86 87"
     },
     "beHelper": {
         "mainTitle": "NASIL YARDIMCI OLABİLİRİZ?",
-        "mainDescription": "Uzman, tecrübeli, hizmette sınır tanımayan kadromuzla bünyemizdeki her öğrenciyi özgüveni yüksek, araştıran, problem çözebilen, sevmeyi ve sevilmeyi bilen, empati kurabilen, düşünen ve üreten bir birey olarak yetiştirmek kurumumuzun amaçları arasında yer almaktadır.",
+        "mainDescription": "Matbaa sektöründe sunduğumuz geniş yelpazedeki profesyonel hizmetlerle işlerinizi kesintisiz ve yüksek kalitede yönetiyoruz. Müşterilerimize özel çözümler sunarak, her ihtiyaca uygun baskı ve yayıncılık hizmetleri sağlıyoruz. Yüksek teknolojiye sahip ekipmanlarımız ve uzman kadromuzla, tasarımından teslimatına kadar her aşamada titizlikle çalışıyoruz. Sektördeki deneyimimiz ve müşteri memnuniyeti odaklı yaklaşımımızla, iş ortaklarımızın beklentilerini aşmayı hedefliyoruz.",
         "buttonText": "İLETİŞİM BİLGİLERİ",
         "sections": [
             {
                 "icon": "FaClover",
-                "title": "SEVGİYLE EĞİTİM",
-                "description": "Günlük hayatta kullanmış olduğumuz somut ve soyut birçok kavramı farkederek öğreniyorlar."
+                "title": "ÖZEL BASKI",
+                "description": "Her müşterinin özel ihtiyaçlarına yönelik kaliteli ve özgün baskı çözümleri sunuyoruz."
             },
             {
                 "icon": "FaThumbsUp",
-                "title": "BAŞARILI EĞİTİM",
-                "description": "Çocukta zeka gelişiminin %70 lik kısmı 7 yaşına kadar tamamlanır ve öğrenme becerisi bu yaşta gelişir."
+                "title": "ZAMANINDA TESLİM",
+                "description": "Güvenilir zaman yönetimi ve etkin lojistik ile işlerinizi zamanında teslim ediyoruz."
             },
             {
                 "icon": "FaPeopleGroup",
-                "title": "TECRÜBELİ KADRO",
-                "description": "Personelin tecrübe, güler yüz ve yüksek motivasyonunun getirdiği olumlu özellikleri çocuklara yansıttığı bir ortam."
+                "title": "PROFESYONEL DESTEK",
+                "description": "Uzman ekip ve danışmanlık hizmetleriyle her adımda yanınızdayız, işlerinizi kolaylaştırıyoruz."
             }
         ],
         "videoLink": "/multimedya/video",
-        "videoImage": "/pictures/homework.jpg"
+        "videoImage": "/pictures/matbaa4.jpg"
     },
-    "educationPrograms": {
-        "mainTitle": "EĞİTİM ALANLARIMIZ VE ÇALIŞMALARIMIZ",
-        "subTitle": "EĞİTİM PROGRAMLARIMIZ",
-        "programs": [
-            {
-                "text": "İlkokul",
-                "src": "/pictures/ilkokul.png",
-                "link": "/programlarimiz/ilkokul"
-            },
-            {
-                "text": "Ortaokul",
-                "src": "/pictures/ortaokul.jpg",
-                "link": "/programlarimiz/ortaokul"
-            },
-            {
-                "text": "Lise",
-                "src": "/pictures/lise.jpg",
-                "link": "/programlarimiz/lise"
-            }
-        ]
-    },
+ 
     "professionalCrew": {
-        "mainTitle": "PROFESYONEL",
-        "subTitle": "KADROMUZ"
+        "mainTitle": "BAZI",
+        "subTitle": "REFERANSLARIMIZ"
     },
     "usInNumbers": {
         "mainTitle": "NEDEN BİZİ TERCİH ETMELİSİNİZ?",
@@ -68,13 +48,13 @@
         "boxes": [
             {
                 "icon": "FaHome",
-                "number": "10",
+                "number": "25",
                 "title": "Yıllık Tecrübe"
             },
             {
                 "icon": "FaHeart",
                 "number": "2500",
-                "title": "Mutlu Öğrencilerimiz"
+                "title": "Mutlu Müşteri"
             },
             {
                 "icon": "FaLeaf",
@@ -84,7 +64,7 @@
             {
                 "icon": "FaAward",
                 "number": "10",
-                "title": "Başarı Ödülü"
+                "title": "Referans"
             }
         ]
     }

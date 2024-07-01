@@ -7,7 +7,7 @@ const Banner = ({src, heading}) => {
             <div className={styles.imageContainer}>
                 <Image
                     src={src}
-                    alt="Ana Sayfa Görseli"
+                    alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
                     layout="fill" // Resmin nasıl yerleştirileceği (fill: container boyutunu dolduracak şekilde)
                     objectFit="cover" // Resmin nasıl uyum sağlayacağı (cover: tamamen kaplayacak şekilde)
                     quality={100} 

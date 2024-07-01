@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../../styles/AboutComponent.module.css';
-import aboutData from '../datas/About.json'; // Assuming '../datas/About.json' is the correct path
+import aboutData from '../datas/About.json';
 
 const WhoWeAre = () => {
     const { whoWeAre } = aboutData;
@@ -13,16 +13,18 @@ const WhoWeAre = () => {
                 <div className={styles.logoContainer}>
                     <Image
                         src={whoWeAre.image}
-                        alt={whoWeAre.title}
+                        alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
                         layout="fill"
                         className={styles.logoImage}
                     />
                 </div>
                 <div className={styles.textContent}>
-                    <span>{whoWeAre.description}</span>
+                    <span>{whoWeAre.description}</span> <br/> <br/>
+                    <span>{whoWeAre.description2}</span>
+
                 </div>
             </div>
-            <span>{whoWeAre.description}</span>
+            <span>{whoWeAre.description3}</span>
         </div>
     );
 };

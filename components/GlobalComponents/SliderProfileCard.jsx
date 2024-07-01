@@ -4,13 +4,11 @@ import styles from '../../styles/GlobalComponent.module.css';
 import ProfileCard from './ProfileCard';
 
 const profiles = [
-    { id: 1, name: 'Batuhan Gökalp', title: 'Matematik Öğretmeni', src: '/pictures/teacher1.jpg' },
-    { id: 2, name: 'Melis Yılmaz', title: 'Türkçe Öğretmeni', src: '/pictures/teacher2.jpg' },
-    { id: 3, name: 'Berk Yakın', title: 'Tarih Öğretmeni', src: '/pictures/teacher3.jpg' },
-    { id: 4, name: 'Burçin Yalçın', title: 'Coğrafya Öğretmeni', src: '/pictures/teacher4.jpg' },
-    { id: 5, name: 'Gökay Gökalp', title: 'Matematik Öğretmeni', src: '/pictures/teacher1.jpg' },
-    { id: 6, name: 'Çağlar Yılmaz', title: 'Türkçe Öğretmeni', src: '/pictures/teacher2.jpg' },
-
+    { id: 1, name: 'Batuhan Gökalp', title: 'Matematik Öğretmeni', src: '/pictures/defacto.png' },
+    { id: 2, name: 'Melis Yılmaz', title: 'Türkçe Öğretmeni', src: '/pictures/lcw.png' },
+    { id: 3, name: 'Berk Yakın', title: 'Tarih Öğretmeni', src: '/pictures/koton.png' },
+    { id: 4, name: 'Burçin Yalçın', title: 'Coğrafya Öğretmeni', src: '/pictures/jackjones.png' },
+    { id: 5, name: 'Gökay Gökalp', title: 'Matematik Öğretmeni', src: '/pictures/suvari.png' }, 
 ];
 
 const SliderProfileCard = () => {
@@ -29,7 +27,7 @@ const SliderProfileCard = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % profiles.length);
-        }, 3000);
+        }, 2500);
 
         return () => clearInterval(interval);
     }, [profiles.length]);

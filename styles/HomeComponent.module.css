@@ -72,7 +72,6 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
 }
 
 .beHelperFirstBox {
@@ -258,7 +257,6 @@
 @media (max-width: 768px) {
     .beHelper {
         flex-direction: column;
-        margin-bottom: 3rem;
     }
 
     .beHelperFirstBox {
@@ -336,8 +334,7 @@
     flex-direction: row;
     width: 100%;
     background-color: var(--aboutUs-bg-color);
-    padding: 4rem;
-    margin-top: 2rem;
+    padding: 8rem 4rem;
     justify-content: space-around;
 }
 
@@ -585,10 +582,9 @@
     width: 100%;
     background-color: var(--professionalCrew-bg-color);
     align-items: center;
-    padding: 3rem 0;
+    padding: 6rem 0;
     gap: 0.5rem;
-    margin-top: 2rem;
-
+    height: 30rem;
 }
 
 .professionalCrew h4 {
@@ -617,7 +613,7 @@
 }
 
 @media (max-width: 768px) {
-    .educationProgramsBoxes {
+    .professionalCrewBoxes {
         flex-direction: column;
         gap: 2rem
     }

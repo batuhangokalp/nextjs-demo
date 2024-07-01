@@ -4,37 +4,49 @@ const ProfessionalCrew = ({ slug }) => {
     return (
         <div className={styles.professionalCrew}>
             <ProfileCard
-                src={"/pictures/teacher1.jpg"}
+                src={"/pictures/defacto.png"}
                 name="Batuhan Gökalp"
                 title="Matematik Öğretmeni"
                 slug={slug}
             />
             <ProfileCard
-                src={"/pictures/teacher2.jpg"}
+                src={"/pictures/lcw.png"}
                 name="Ayşe Yılmaz"
                 title="Türkçe Öğretmeni"
                 slug={slug}
             />
             <ProfileCard
-                src={"/pictures/teacher3.jpg"}
+                src={"/pictures/koton.png"}
                 name="Burak Yakın"
                 title="Tarih Öğretmeni"
                 slug={slug}
             />
             <ProfileCard
-                src={"/pictures/teacher4.jpg"}
+                src={"/pictures/jackjones.png"}
                 name="Aslı Yalçın"
                 title="Coğrafya Öğretmeni"
                 slug={slug}
             />
             <ProfileCard
-                src={"/pictures/teacher1.jpg"}
+                src={"/pictures/suvari.png"}
                 name="Batuhan Gökalp"
                 title="Matematik Öğretmeni"
                 slug={slug}
             />
             <ProfileCard
-                src={"/pictures/teacher2.jpg"}
+                src={"/pictures/pastel.png"}
+                name="Ayşe Yılmaz"
+                title="Türkçe Öğretmeni"
+                slug={slug}
+            />
+            <ProfileCard
+                src={"/pictures/ebebek.png"}
+                name="Ayşe Yılmaz"
+                title="Türkçe Öğretmeni"
+                slug={slug}
+            />
+            <ProfileCard
+                src={"/pictures/panco.png"}
                 name="Ayşe Yılmaz"
                 title="Türkçe Öğretmeni"
                 slug={slug}

@@ -1,17 +1,24 @@
+"use client";
+
 import Image from 'next/image';
 import React from 'react';
 import styles from '../../styles/HomeComponent.module.css';
 import { FaPhoneAlt } from "react-icons/fa";
 import homeData from '../datas/Home.json';
+import { useRouter } from 'next/navigation';
 
 const AboutUs = () => {
+    const router = useRouter();
     const { aboutUs } = homeData; 
+    const handleRedirectToContact = () => {
+        router.push('/iletisim');
+    };
     return (
         <div className={styles.aboutUs}>
             <div className={styles.aboutUsImg}>
                 <Image
                     src={aboutUs.image}
-                    alt="Logo"
+                    alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
                     layout="fill"
                     className={styles.logoImage}
                 />
@@ -21,7 +28,7 @@ const AboutUs = () => {
                 <h2>{aboutUs.subtitle}</h2>
                 <span>{aboutUs.description}</span>
                 <div className={styles.aboutUsSupport}>
-                    <button className={styles.aboutUsButton}>
+                    <button className={styles.aboutUsButton} onClick={handleRedirectToContact}>
                         <span>{aboutUs.supportButtonText}</span>
                     </button>
                     <div className={styles.supportInfo}>

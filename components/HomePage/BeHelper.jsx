@@ -62,7 +62,7 @@ const BeHelper = () => {
                 </Link>
                 <Image
                     src={beHelper.videoImage}
-                    alt="Logo"
+                    alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
                     layout="fill"
                     className={styles.logoImage}
                 />

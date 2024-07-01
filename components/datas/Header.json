@@ -1,5 +1,5 @@
 {
-    "logo": "/pictures/etut-logo.png",
+    "logo": "/pictures/tempo-logo.png",
     "links": [
         { "href": "/", "label": "Ana Sayfa" },
         {
@@ -7,25 +7,23 @@
             "submenu": [
                 { "href": "/hakkimizda/biz-kimiz", "label": "Biz Kimiz" },
                 { "href": "/hakkimizda/vizyon-misyon", "label": "Vizyon ve Misyonumuz" },
-                { "href": "/hakkimizda/ekibimiz", "label": "Ekibimiz" }
+                { "href": "/hakkimizda/referanslarimiz", "label": "Referanslarımız" }
             ]
         },
         {
             "label": "Hizmetlerimiz",
             "submenu": [
-                { "href": "/hizmetlerimiz/yabanci-dil", "label": "Yabancı Dil" },
-                { "href": "/hizmetlerimiz/yaz-okulu", "label": "Yaz Okulu" },
-                { "href": "/hizmetlerimiz/kodlama-atolyesi", "label": "Kodlama Atolyesi" }
+                { "href": "/hizmetlerimiz/ilac-kutulari", "label": "İlaç Kutuları" },
+                { "href": "/hizmetlerimiz/makyaj-malzeme-kutulari", "label": "Makyaj Malzeme Kutuları" },
+                { "href": "/hizmetlerimiz/karton-canta", "label": "Karton Çanta" },
+                { "href": "/hizmetlerimiz/karton-etiket", "label": "Karton Etiket" },
+                { "href": "/hizmetlerimiz/katalog", "label": "Katalog" },
+                { "href": "/hizmetlerimiz/hediye-paketleri", "label": "Hediye Paketleri" },
+                { "href": "/hizmetlerimiz/ayakkabi-kutulari", "label": "Ayakkabı Kutuları" },
+                { "href": "/hizmetlerimiz/donkart", "label": "Dönkart" }
             ]
         },
-        {
-            "label": "Programlarımız",
-            "submenu": [
-                { "href": "/programlarimiz/ilkokul", "label": "İlkokul" },
-                { "href": "/programlarimiz/ortaokul", "label": "Ortaokul" },
-                { "href": "/programlarimiz/lise", "label": "Lise" }
-            ]
-        },
+
         {
             "label": "Multimedya",
             "submenu": [

@@ -9,7 +9,7 @@ const EducationProgramBox = ({ text, src, link }) => {
                 <Link href={link}>
                     <Image
                         src={src}
-                        alt="Logo"
+                        alt="matbaa, tempo, baskı, basım, karton, kağıt, reklam, kartvizit, broşür, tanıtım"
                         layout="fill"
                         className={styles.educationProgramsImg}
                     />
