@@ -17,6 +17,8 @@
     animation: slideIn 0.3s ease forwards;
     position: relative;
     overflow: hidden;
+    border: 1px solid #f8f8f8;
+    border-radius: 30px;
 }
 
 .thumbnail:hover {
