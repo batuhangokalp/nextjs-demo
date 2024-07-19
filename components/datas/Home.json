@@ -1,9 +1,16 @@
 {
-    "mainTop": {
-        "image": "/pictures/mainImg.jpg",
-        "title": "ÖDEV-OKUL DESTEĞİ ÇALIŞMASI",
-        "description": "ÖĞRENCİLER ÖDEVLERİNİ, SINIF VE BRANŞ ÖĞRETMENLERİ GÖZETİMİNDE YAPMAKTADIRLAR."
-    },
+    "mainTop": [
+        {
+            "image": "/pictures/mainImg.jpg",
+            "title": "ÖDEV-OKUL DESTEĞİ ÇALIŞMASI",
+            "description": "ÖĞRENCİLER ÖDEVLERİNİ, SINIF VE BRANŞ ÖĞRETMENLERİ GÖZETİMİNDE YAPMAKTADIRLAR."
+        },
+        {
+            "image": "/pictures/mainImg2.jpg",
+            "title": "REKABET ETMEK YERİNE BİRBİRİNE YARDIM EDEBİLEN",
+            "description": "HAYAL GÜCÜNE SAHİP, EZBERBOZAN, ÜRETEN, SIRA DIŞI DÜŞÜNEN."
+        }
+    ],
     "aboutUs": {
         "image": "/pictures/hakkimizda.png",
         "title": "HAKKIMIZDA",

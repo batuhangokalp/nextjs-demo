@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/GlobalComponents/Header";
 import Footer from "@/components/GlobalComponents/Footer";
+import WhatsAppButton from "@/components/GlobalComponents/WhatsappButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Layout({ children }) {
       </head>
       <body className={inter.className}>
         <Header />
+        <WhatsAppButton />
         <main>{children}</main>
         <Footer />
       </body>
