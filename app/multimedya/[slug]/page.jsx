@@ -15,11 +15,11 @@ const photos = [
   '/pictures/img4.jpg',
 ];
 const videos = [
-  { id: 'lnHtdgvR3pQ' },
-  { id: 'bA5kG5NFph0' },
-  { id: 'Eo_nV-Yrg0s' },
-  { id: 'en9GeqkO89E' },
-  { id: 'c6-ChtDWT00' },
+  { id: 'test' },
+  { id: 'test' },
+  { id: 'test' },
+  { id: 'test' },
+  { id: 'test' },
 ];
 export default function ProgramPage() {
   const params = useParams();
